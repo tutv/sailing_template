@@ -6764,3 +6764,7 @@ button.close {
     display: none !important;
   }
 }
+.img-fullwidth {
+  width: 100%;
+  height: auto;
+}
