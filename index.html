@@ -37,32 +37,34 @@
 
             <!-- Navbar fixed top -->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" alt="Logo">
-                    </a>
-                </div>
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                    </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Reservation</a></li>
-                        <li><a href="#">Room</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Features</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Reservation</a></li>
+                            <li><a href="#">Room</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Features</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
             </nav>
 
             <!-- Slide -->
@@ -79,13 +81,17 @@
                     <div class="item active">
                         <img class="img-responsive img-fullwidth" src="img/slide/img-slide-1.png" alt="Image slide one">
                         <div class="carousel-caption">
-                            ...
+                            <h2>Welcome to Sailing Hotel</h2>
+                            <div>Where every stay is unique.</div>
+                            <a href="#" class="explore btn btn-default">Explore</a>
                         </div>
                     </div>
                     <div class="item">
                         <img class="img-responsive img-fullwidth" src="img/slide/img-slide-2.png" alt="Image slide two">
                         <div class="carousel-caption">
-                            ...
+                            <h2>Welcome to Sailing Hotel</h2>
+                            <div>Where every stay is unique.</div>
+                            <a href="#" class="explore btn btn-default">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -95,37 +101,382 @@
 
         <!-- Reservation -->
         <section id="reservation">
-
+            <div class="container">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Arrival Date">
+                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="sdfsd" placeholder="Departure Date">
+                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="sdf" placeholder="Adults">
+                            <div class="input-group-addon"><i class="fa fa-caret-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="sdfwe" placeholder="Children">
+                            <div class="input-group-addon"><i class="fa fa-caret-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default btn-block">Check Availability</button>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!-- Room -->
         <section id="room">
+            <div class="container">
+                <div class="title text-center">
+                    <h2>Hotel Master Rooms</h2>
+                    <small>Semper ac dolor vitae accumsan.</small>
+                </div>
 
+                <div class="nav text-center">
+                    <span class="previous">
+                        <img src="img/nav_previous.png" alt="Previous room">
+                    </span>
+
+                    <span class="all-rooms">View All Rooms</span>
+
+                    <span class="next">
+                        <img src="img/nav_next.png" alt="Next room">
+                    </span>
+                </div>
+
+                <div class="rooms">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="thumb">
+                                <img class="img-responsive img-fullwidth" src="img/room_1.png" alt="Room 1">
+                                <div class="details">
+                                    <div class="price">$300</div>
+                                    <div class="time">Night</div>
+                                </div>
+                            </div>
+
+                            <h3 class="name">Deluxe Room</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumb">
+                                <img class="img-responsive img-fullwidth" src="img/room_1.png" alt="Room 1">
+                                <div class="details">
+                                    <div class="price">$300</div>
+                                    <div class="time">Night</div>
+                                </div>
+                            </div>
+
+                            <h3 class="name">Deluxe Room</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumb">
+                                <img class="img-responsive img-fullwidth" src="img/room_1.png" alt="Room 1">
+                                <div class="details">
+                                    <div class="price">$300</div>
+                                    <div class="time">Night</div>
+                                </div>
+                            </div>
+
+                            <h3 class="name">Deluxe Room</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumb">
+                                <img class="img-responsive img-fullwidth" src="img/room_1.png" alt="Room 1">
+                                <div class="details">
+                                    <div class="price">$300</div>
+                                    <div class="time">Night</div>
+                                </div>
+                            </div>
+
+                            <h3 class="name">Deluxe Room</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Banner -->
         <section id="banner">
-
+            <img class="img-responsive img-fullwidth" src="img/banner.png" alt="Banner">
+            <div class="text">
+                <div class="hot">Red Hot Summer</div>
+                <div class="savings">Savings</div>
+                <div class="sale">50% Off 3rd Night</div>
+                <button class="learn-more btn btn-default">Learn More</button>
+            </div>
         </section>
 
         <!-- About -->
         <section id="about">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-8">
+                        <div class="about">
+                            <div class="row">
+                                <h3>Sailing Hotel</h3>
+                                <div class="col-md-6">
+                                    <img class="img-fullwidth img-responsive" src="img/about.png" alt="About">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="details">
+                                        <p>Laculis diam eu tortor euismodolo. Vestib ulum antipsum primis inicibu orci luctus edloret ultrices et posuere cubil sed odiocinialor it matis ed.Eu tortor euismodolo. Vestibulum ant psu meop primis inicibu orci luctus ed ultrices et posuere cubil.</p>
+                                        <div class="number"><i class="fa fa-phone"></i> +00 123 456 789</div>
+                                        <div class="mail"><i class="fa fa-envelope"></i> hello@yourmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Sevices -->
+                    <div class="col-md-4">
+                        <div class="services">
+                            <h3>Our Services</h3>
+                            <ul class="list-services">
+                                <li><i class="fa fa-check-circle"></i>24 hour front desk staff</li>
+                                <li><i class="fa fa-check-circle"></i>Free airport pick up service</li>
+                                <li><i class="fa fa-check-circle"></i>Swimming pool</li>
+                                <li><i class="fa fa-check-circle"></i>24h Parking & Security</li>
+                                <li><i class="fa fa-check-circle"></i>2 Revoling Coktail bar</li>
+                                <li><i class="fa fa-check-circle"></i>4 Restaurants</li>
+                                <li><i class="fa fa-check-circle"></i>200 Rooms</li>
+                                <li><i class="fa fa-check-circle"></i>Free breakfast everyday</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Video -->
         <section id="video">
-
+            <div class="container-video">
+                <video controls>
+                    <source src="media/video_tour.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="title">
+                <h4 class="video_name">Video Tour</h4>
+                <div class="play"><i class="fa fa-play-circle"></i></div>
+            </div>
         </section>
 
         <!-- Event -->
         <section id="event">
+            <div class="container">
+                <div class="row">
+                    <!-- Event -->
+                    <div class="col-md-4">
+                        <div class="event">
+                            <h3>Upcoming Events</h3>
+                            <div class="list-events">
+                                <div class="item">
+                                    <div class="date pull-left">
+                                        <div class="day">05</div>
+                                        <div class="month">Jan</div>
+                                    </div>
+                                    <div class="details">
+                                        <h4>Does Wikipedia Need a Medical Disclaimer?</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisici...</p>
+                                    </div>
+                                </div>
 
+                                <div class="item">
+                                    <div class="date pull-left">
+                                        <div class="day">05</div>
+                                        <div class="month">Jan</div>
+                                    </div>
+                                    <div class="details">
+                                        <h4>Does Wikipedia Need a Medical Disclaimer?</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisici...</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="date pull-left">
+                                        <div class="day">05</div>
+                                        <div class="month">Jan</div>
+                                    </div>
+                                    <div class="details">
+                                        <h4>Does Wikipedia Need a Medical Disclaimer?</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisici...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">Read All Event</a>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <h3>Testimonial</h3>
+
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel" data-slide-to="1"></li>
+                                    <li data-target="#carousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class="testimonial_content">Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus.<br>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</div>
+                                        <div class="person">
+                                            <img class="img-responsive pull-left" src="img/avatar.png" alt="Avatar">
+                                            <div class="details">
+                                                <h4>Peter Packer</h4>
+                                                <div class="regency">CEO of Touristlink</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="testimonial_content">Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus.<br>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</div>
+                                        <div class="person">
+                                            <img class="img-responsive pull-left" src="img/avatar.png" alt="Avatar">
+                                            <div class="details">
+                                                <h4>Peter Packer</h4>
+                                                <div class="regency">CEO of Touristlink</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="testimonial_content">Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni sed temporibus.<br>Amet atque aut autem consectetur consequuntur dolorum enim error hic inventore molestiae nisi nostrum numquam optio perspiciatis provident.</div>
+                                        <div class="person">
+                                            <img class="img-responsive pull-left" src="img/avatar.png" alt="Avatar">
+                                            <div class="details">
+                                                <h4>Peter Packer</h4>
+                                                <div class="regency">CEO of Touristlink</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="col-md-4">
+                        <div class="instagram">
+                            <h3>Instagram Slider</h3>
+
+                            <div class="list-images">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_1.png" alt="Instagram 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_2.png" alt="Instagram 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_3.png" alt="Instagram 3">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_21.png" alt="Instagram 21">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_22.png" alt="Instagram 22">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_23.png" alt="Instagram 23">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_31.png" alt="Instagram 31">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_32.png" alt="Instagram 32">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/instagram_33.png" alt="Instagram 33">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Footer -->
         <footer id="footer">
-            <div class="linked"></div>
-            <div class="copyright"></div>
+            <div class="container">
+                <div class="top-footer">
+                    <div class="row">
+                        <div class="company-info col-md-4">
+                            <img class="img-responsive logo-footer" src="img/logo_footer.png" alt="Logo footer">
+                            <div class="contact">
+                                <div class="call">Call. +00 123 456 789</div>
+                                <div class="email">Email. hello@yourmail.com</div>
+                            </div>
+
+                            <div class="address">329 Queensberry Street, North Melbourne VIC 3051, Australia.</div>
+                        </div>
+
+                        <div class="linked col-md-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-link">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Work Here</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Happenings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-link">
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Warranty</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="newsletter col-md-4">
+                            <h4>Get Our Newsletter</h4>
+
+                            <form role="form">
+                                <div class="form-group">
+                                    <input class="form-control" name="email" type="text" placeholder="You email here">
+                                    <button type="button" class="btn btn-default">Sign In</button>
+                                </div>
+                            </form>
+
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-skype"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    Designed by <a href="#">ThimPress</a>. Powered by WordPress.
+                </div>
+            </div>
         </footer>
     </div>
 
