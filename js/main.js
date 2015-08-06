@@ -18,7 +18,7 @@ $(document).ready(function () {
     /* Video */
     var videoContainer = $("#video .container-video");
     var heightVideo = videoContainer.outerHeight(false);
-    videoContainer.css('margin-top', -height/2);
+    videoContainer.css('margin-top', -height/4);
 
     //Align Center
     var play = $("#video .title");

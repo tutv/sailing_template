@@ -129,7 +129,7 @@ h6 {
 	#slide-top {
 		z-index: 0;
 		.carousel-inner {
-			> .item {
+			.item {
 				.carousel-caption {
 					z-index: 3;
 					color: #fff;
@@ -139,17 +139,17 @@ h6 {
 					padding: 0;
 					top: 50%;
 					bottom: auto;
-					> h2 {
+					h2 {
 						font-size: 55px;
 						font-family: 'Crimson Text', serif;
 						margin-bottom: 11px;
 					}
-					> small {
+					small {
 						font-size: 24px;
 						display: block;
 						margin-bottom: 35px;
 					}
-					> a.explore {
+					a.explore {
 						color: #fff;
 						background-color: transparent;
 						border: 1px solid #fff;
@@ -191,7 +191,7 @@ h6 {
 		form {
 			padding: 30px 25px 30px 45px;
 			.form-group {
-				width: 20%;
+				//width: 20%;
 				float: left;
 				padding-right: 20px;
 				.input-group {
@@ -366,19 +366,22 @@ h6 {
 			h3 {
 				.head-title();
 			}
-			.details {
-				p {
-					font-size: 15px;
-					line-height: 24px;
-					color: #5a5a5a;
-					margin-bottom: 30px;
-				}
-				.number, .mail {
-					color: @color-primary;
-					font-size: 15px;
-				}
-				.number {
-					margin-bottom: 20px;
+			.row {
+				padding-bottom: 20px;
+				.details {
+					p {
+						font-size: 15px;
+						line-height: 24px;
+						color: #5a5a5a;
+						margin-bottom: 30px;
+					}
+					.number, .mail {
+						color: @color-primary;
+						font-size: 15px;
+					}
+					.number {
+						margin-bottom: 20px;
+					}
 				}
 			}
 		}
@@ -644,7 +647,8 @@ h6 {
 			.linked {
 				.list-link {
 					list-style: none;
-					margin-bottom: 0;
+					margin-bottom: 10px;
+					padding-left: 0;
 					li {
 						padding-bottom: 23px;
 						a {
@@ -726,3 +730,174 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive
 --------------------------------------------------------------*/
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+@screen-xs-max: @screen-sm-min - 1;
+
+@media (max-width: 560px) {
+	#header {
+		.container-nav {
+			#info {
+				display: none!important;
+			}
+			#navbar-top {
+				margin-top: 20px!important;
+				.navbar-header {
+					.navbar-toggle {
+						margin-top: 10px!important;
+					}
+				}
+			}
+		}
+		#slide-top {
+			.carousel-inner {
+				.item {
+					.carousel-caption {
+						h2 {
+							margin-top: 30px;
+						}
+						small {
+						}
+						a.explore {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	#header {
+		.container-nav {
+			#info {
+				//display: none;
+			}
+			#navbar-top {
+				margin-top: -30px;
+				.navbar-header {
+					.navbar-toggle {
+						margin-top: 60px;
+					}
+				}
+			}
+		}
+		#slide-top {
+			.carousel-inner {
+				.item {
+					.carousel-caption {
+						h2 {
+							font-size: 20px;
+							margin-bottom: 5px;
+						}
+						small {
+							font-size: 14px;
+							margin-bottom: 10px;
+						}
+						a.explore {
+							padding: 7px 20px;
+							font-size: 13px;
+						}
+					}
+				}
+			}
+		}
+		#reservation {
+			position: static;
+			.container {
+				padding-left: 0;
+				padding-right: 0;
+				form {
+					padding: 30px 0;
+				}
+			}
+		}
+	}
+	#room {
+		margin-top: 40px;
+	}
+	#banner {
+		.text {
+			.hot {
+
+			}
+			.savings {
+				font-size: 30px;
+				margin-top: 5px;
+			}
+			.sale {
+				font-size: 16px;
+			}
+			.learn-more {
+				margin-top: 12px;
+			}
+		}
+	}
+	#about {
+		.container {
+			.row {
+				.services {
+					border: none;
+					padding-left: 0;
+					.list-services {
+
+					}
+				}
+			}
+		}
+
+	}
+	#video {
+		height: 150px;
+		.title {
+			.video_name {
+				display: none;
+			}
+		}
+	}
+	#event {
+		.container {
+			.row {
+				.event {
+					padding-bottom: 30px;
+				}
+				.testimonial {
+					padding-bottom: 70px;
+				}
+				.instagram {
+					.list-images {
+						.row {
+							> div {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#footer {
+		.container {
+			.top-footer {
+				.company-info {
+					padding-bottom: 30px;
+				}
+			}
+		}
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+}

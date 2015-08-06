@@ -91,7 +91,7 @@ h6 {
 #header #slide-top {
   z-index: 0;
 }
-#header #slide-top .carousel-inner > .item .carousel-caption {
+#header #slide-top .carousel-inner .item .carousel-caption {
   z-index: 3;
   color: #fff;
   text-shadow: none;
@@ -101,24 +101,24 @@ h6 {
   top: 50%;
   bottom: auto;
 }
-#header #slide-top .carousel-inner > .item .carousel-caption > h2 {
+#header #slide-top .carousel-inner .item .carousel-caption h2 {
   font-size: 55px;
   font-family: 'Crimson Text', serif;
   margin-bottom: 11px;
 }
-#header #slide-top .carousel-inner > .item .carousel-caption > small {
+#header #slide-top .carousel-inner .item .carousel-caption small {
   font-size: 24px;
   display: block;
   margin-bottom: 35px;
 }
-#header #slide-top .carousel-inner > .item .carousel-caption > a.explore {
+#header #slide-top .carousel-inner .item .carousel-caption a.explore {
   color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
   font-size: 14px;
   padding: 13px 33px;
 }
-#header #slide-top .carousel-inner > .item:before {
+#header #slide-top .carousel-inner .item:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -149,7 +149,6 @@ h6 {
   padding: 30px 25px 30px 45px;
 }
 #reservation .container form .form-group {
-  width: 20%;
   float: left;
   padding-right: 20px;
 }
@@ -323,18 +322,21 @@ h6 {
   height: 1px;
   background-color: #2eb0d1;
 }
-#about .container .about .details p {
+#about .container .about .row {
+  padding-bottom: 20px;
+}
+#about .container .about .row .details p {
   font-size: 15px;
   line-height: 24px;
   color: #5a5a5a;
   margin-bottom: 30px;
 }
-#about .container .about .details .number,
-#about .container .about .details .mail {
+#about .container .about .row .details .number,
+#about .container .about .row .details .mail {
   color: #2eb0d1;
   font-size: 15px;
 }
-#about .container .about .details .number {
+#about .container .about .row .details .number {
   margin-bottom: 20px;
 }
 #about .container .services {
@@ -603,7 +605,8 @@ h6 {
 }
 #footer .container .top-footer .linked .list-link {
   list-style: none;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
 }
 #footer .container .top-footer .linked .list-link li {
   padding-bottom: 23px;
@@ -670,3 +673,82 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive
 --------------------------------------------------------------*/
+@media (max-width: 560px) {
+  #header .container-nav #info {
+    display: none!important;
+  }
+  #header .container-nav #navbar-top {
+    margin-top: 20px!important;
+  }
+  #header .container-nav #navbar-top .navbar-header .navbar-toggle {
+    margin-top: 10px!important;
+  }
+  #header #slide-top .carousel-inner .item .carousel-caption h2 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #header .container-nav #navbar-top {
+    margin-top: -30px;
+  }
+  #header .container-nav #navbar-top .navbar-header .navbar-toggle {
+    margin-top: 60px;
+  }
+  #header #slide-top .carousel-inner .item .carousel-caption h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  #header #slide-top .carousel-inner .item .carousel-caption small {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  #header #slide-top .carousel-inner .item .carousel-caption a.explore {
+    padding: 7px 20px;
+    font-size: 13px;
+  }
+  #header #reservation {
+    position: static;
+  }
+  #header #reservation .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #header #reservation .container form {
+    padding: 30px 0;
+  }
+  #room {
+    margin-top: 40px;
+  }
+  #banner .text .savings {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  #banner .text .sale {
+    font-size: 16px;
+  }
+  #banner .text .learn-more {
+    margin-top: 12px;
+  }
+  #about .container .row .services {
+    border: none;
+    padding-left: 0;
+  }
+  #video {
+    height: 150px;
+  }
+  #video .title .video_name {
+    display: none;
+  }
+  #event .container .row .event {
+    padding-bottom: 30px;
+  }
+  #event .container .row .testimonial {
+    padding-bottom: 70px;
+  }
+  #footer .container .top-footer .company-info {
+    padding-bottom: 30px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
