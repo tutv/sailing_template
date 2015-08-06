@@ -50,9 +50,6 @@ h5,
 h6 {
 	margin: 0;
 }
-.container {
-	.reset-padding-container();
-}
 
 /*--------------------------------------------------------------
 ## Header
@@ -901,6 +898,9 @@ h6 {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
+	.container {
+		.reset-padding-container();
+	}
 	#header {
 		.container-nav {
 			#info {
